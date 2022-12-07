@@ -13,9 +13,121 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'DM Sans';
+    src: url(fonts/DMSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+body{
+    margin:0;
+}
+
+nav, main, footer {
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bree Serif';
     font-style: normal;
     font-weight: 400;
 }
 
+.navbar{
+    width:1200px;
+    padding:0.5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.navbar .logo::after{
+    display:inline;
+    content: "StartupLanding";
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left:14px;
+    vertical-align: 50%;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.nav-links ul{
+    font-family: 'DM Sans';
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    gap:2.3rem;
+}
+
+.nav-links ul li a{
+    text-decoration:none;
+    color:var(--navy);
+    font-size:0.75rem;
+    font-weight:700;
+    font-size:0.8rem;
+    line-height:1rem;
+}
+
+.nav-links ul li:last-child a{
+    color:var(--pink);
+    border-bottom:1px solid var(--pink);
+    /* transform: translateY(12px); */
+}
+
+/* .nav-links ul li:last-child a:after{
+    content: "";
+    display: block;
+    height:12px;
+    background-image: url(images/navlink-underline.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+} */
+
+.footer{
+    width:1200px;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.footer .footer-column{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.footer #footer-logo{
+    grid-column:1/2;
+    grid-row:1/2;
+}
+
+.footer #footer-about-us{
+    grid-column:2/3;
+    grid-row:1/2;
+}
+
+.footer #footer-our-information{
+    grid-column:3/4;
+    grid-row:1/2;
+}
+
+.footer #footer-my-account{
+    grid-column:4/5;
+    grid-row:1/2;
+}
+
+.footer #footer-connect{
+    grid-column:5/6;
+    grid-row:1/2;
+}

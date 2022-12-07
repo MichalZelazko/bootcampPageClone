@@ -1,0 +1,21 @@
+:root{
+    font-size: 20px;
+    --pink: #F94962;
+    --white: #FFFFFF;
+    --black: #000000;
+    --blue: #3183FF;
+    --navy: #183656;
+    --main-bg: #E5E5E5;
+    --section-bg: #F9FAFC;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bree Serif';
+    font-style: normal;
+    font-weight: 400;
+}
+
